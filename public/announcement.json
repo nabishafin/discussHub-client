@@ -1,0 +1,50 @@
+[
+    {
+        "authorImage": "https://i.ibb.co.com/MhcSxpk/shakib-2.jpg",
+        "authorName": "John Doe",
+        "title": "New Feature Released!",
+        "description": "We're excited to announce a new feature that will improve your experience. Check it out now!"
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/60c3wZk/doctor-3.jpg",
+        "authorName": "Jane Smith",
+        "title": "Scheduled Maintenance",
+        "description": "Our systems will be down for scheduled maintenance on January 20th from 12 AM to 4 AM. Please plan accordingly."
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/nsJ3FRD/doctor-1.jpg",
+        "authorName": "David Brown",
+        "title": "Important Security Update",
+        "description": "A critical security update is being rolled out. Please ensure you update to the latest version to stay secure."
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/MhcSxpk/shakib-2.jpg",
+        "authorName": "Sarah Green",
+        "title": "Product Update",
+        "description": "We've made several enhancements to our product based on user feedback. Check out what's new!"
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/60c3wZk/doctor-3.jpg",
+        "authorName": "Michael Lee",
+        "title": "New Partnership Announcement",
+        "description": "We're excited to partner with XYZ company to bring you even more amazing services. Stay tuned for more details."
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/60c3wZk/doctor-3.jpg",
+        "authorName": "Emma White",
+        "title": "Holiday Hours",
+        "description": "Please note that our offices will be closed from December 24th to January 2nd for the holidays. Happy Holidays!"
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/MhcSxpk/shakib-2.jpg",
+        "authorName": "Chris Black",
+        "title": "Customer Feedback Survey",
+        "description": "We value your feedback! Please take a few minutes to fill out our customer satisfaction survey."
+    },
+    {
+        "authorImage": "https://i.ibb.co.com/MhcSxpk/shakib-2.jpg",
+        "authorName": "Olivia Brown",
+        "title": "Upcoming Webinar",
+        "description": "Join us for an informative webinar on the latest industry trends. Register today to secure your spot!"
+    }
+]

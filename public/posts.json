@@ -1,0 +1,134 @@
+[
+    {
+        "author": "john_doe",
+        "post_title": "How to Learn Python Quickly",
+        "tags": "programming",
+        "time": "2025-01-14T08:30:00Z",
+        "comments_count": 15,
+        "upvote_count": 120,
+        "votes_count": 150,
+        "author_img": "https://i.ibb.co.com/94Bj6D3/doctor-2.webp",
+        "description": "This post covers the most effective ways to quickly learn Python, from understanding the basics to exploring advanced concepts."
+    },
+    {
+        "author": "jane_smith",
+        "post_title": "The Future of Artificial Intelligence",
+        "tags": "programming",
+        "time": "2025-01-13T15:45:00Z",
+        "comments_count": 42,
+        "upvote_count": 250,
+        "votes_count": 300,
+        "author_img": "https://i.ibb.co.com/nsJ3FRD/doctor-1.jpg",
+        "description": "A deep dive into the evolving field of Artificial Intelligence and what we can expect in the coming years."
+    },
+    {
+        "author": "alex_jones",
+        "post_title": "10 Tips for Healthy Living",
+        "tags": "health",
+        "time": "2025-01-12T10:00:00Z",
+        "comments_count": 8,
+        "upvote_count": 75,
+        "votes_count": 85,
+        "author_img": "https://i.ibb.co.com/94Bj6D3/doctor-2.webp",
+        "description": "Simple yet effective tips for maintaining a healthy lifestyle, focusing on nutrition, exercise, and mental well-being."
+    },
+    {
+        "author": "mary_jane",
+        "post_title": "Best Travel Destinations in 2025",
+        "tags": "travel",
+        "time": "2025-01-11T18:00:00Z",
+        "comments_count": 22,
+        "upvote_count": 140,
+        "votes_count": 160,
+        "author_img": "https://i.ibb.co.com/nsJ3FRD/doctor-1.jpg",
+        "description": "A guide to the top travel destinations for 2025, covering unique spots to visit and tips for planning your trips."
+    },
+    {
+        "author": "david_brown",
+        "post_title": "Understanding Blockchain Technology",
+        "tags": "programming",
+        "time": "2025-01-10T12:30:00Z",
+        "comments_count": 35,
+        "upvote_count": 200,
+        "votes_count": 220,
+        "author_img": "https://i.ibb.co.com/MhcSxpk/shakib-2.jpg",
+        "description": "Explains blockchain technology, its underlying concepts, and its growing importance in various industries."
+    },
+    {
+        "author": "laura_white",
+        "post_title": "The Best Vegan Recipes for Beginners",
+        "tags": "food",
+        "time": "2025-01-09T14:00:00Z",
+        "comments_count": 18,
+        "upvote_count": 95,
+        "votes_count": 105,
+        "author_img": "https://i.ibb.co.com/DMnp139/tesla.jpg",
+        "description": "An introduction to delicious and easy-to-make vegan recipes that are perfect for beginners transitioning to a plant-based diet."
+    },
+    {
+        "author": "susan_black",
+        "post_title": "Top 5 Coding Languages to Learn in 2025",
+        "tags": "programming",
+        "time": "2025-01-08T09:30:00Z",
+        "comments_count": 28,
+        "upvote_count": 180,
+        "votes_count": 210,
+        "author_img": "https://i.ibb.co.com/94Bj6D3/doctor-2.webp",
+        "description": "An overview of the most popular and in-demand coding languages for 2025 and beyond, along with tips on getting started."
+    },
+    {
+        "author": "james_kelly",
+        "post_title": "A Beginner’s Guide to Photography",
+        "tags": "photography",
+        "time": "2025-01-07T16:00:00Z",
+        "comments_count": 10,
+        "upvote_count": 85,
+        "votes_count": 95,
+        "author_img": "https://i.ibb.co.com/DMnp139/tesla.jpg",
+        "description": "This beginner's guide to photography will help you understand the basics, from camera settings to composition."
+    },
+    {
+        "author": "linda_lee",
+        "post_title": "Mental Health Awareness: What You Should Know",
+        "tags": "health",
+        "time": "2025-01-06T11:15:00Z",
+        "comments_count": 50,
+        "upvote_count": 300,
+        "votes_count": 350,
+        "author_img": "https://i.ibb.co.com/nsJ3FRD/doctor-1.jpg",
+        "description": "Raising awareness about mental health and offering insights into common mental health issues, treatments, and coping strategies."
+    },
+    {
+        "author": "charlie_green",
+        "post_title": "The Impact of Social Media on Society",
+        "tags": "health",
+        "time": "2025-01-05T13:00:00Z",
+        "comments_count": 40,
+        "upvote_count": 220,
+        "votes_count": 250,
+        "author_img": "https://i.ibb.co.com/DMnp139/tesla.jpg",
+        "description": "Explores the positive and negative effects of social media on society, focusing on mental health, relationships, and communication."
+    },
+    {
+        "author": "kimberly_martin",
+        "post_title": "Exploring Photography Techniques",
+        "tags": "photography",
+        "time": "2025-01-04T09:00:00Z",
+        "comments_count": 30,
+        "upvote_count": 210,
+        "votes_count": 240,
+        "author_img": "https://i.ibb.co.com/MhcSxpk/shakib-2.jpg",
+        "description": "Advanced photography techniques to elevate your skills, covering topics like lighting, depth of field, and creative compositions."
+    },
+    {
+        "author": "ryan_clark",
+        "post_title": "Top 10 Hiking Trails to Explore",
+        "tags": "travel",
+        "time": "2025-01-03T08:00:00Z",
+        "comments_count": 18,
+        "upvote_count": 130,
+        "votes_count": 150,
+        "author_img": "https://i.ibb.co.com/DMnp139/tesla.jpg",
+        "description": "A curated list of the top 10 hiking trails to explore, ranging from easy hikes to more challenging treks for adventure seekers."
+    }
+]
