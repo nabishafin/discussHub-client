@@ -29,7 +29,7 @@ https://discusshub-b96dc.web.app
 - **Node.js**: Server environment.
 - **JWT**: User authentication via JSON Web Tokens.
 - **Axios**: For handling HTTP requests.
-- **Bcrypt.js**: For password hashing.
+
 
 ---
 
@@ -65,6 +65,6 @@ https://discusshub-b96dc.web.app
 ## Step-by-Step Guide to Run Locally
 
 ### 1. Clone the Repository:
-```bash
-git clone https://github.com/your-username/discussHub.git
-cd discussHub
+Github-client : https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-nabishafin.git
+
+Github- server : https://github.com/Programming-Hero-Web-Course4/b10a12-server-side-nabishafin.git
