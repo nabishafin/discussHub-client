@@ -19,9 +19,10 @@ https://discusshub-b96dc.web.app
 
 ## Screenshot
 
-![DiscussHub Screenshot](https://i.ibb.co.com/ynjT4jpv/discusshub-b96dc-web-app-Nest-Hub-Max.png)
+![DiscussHub Screenshot](https://i.ibb.co/ynjT4jpv/discusshub-b96dc-web-app-Nest-Hub-Max.png)
 
----
+
+
 
 ## Main Technologies Used
 - **MongoDB**: Database for storing user data and discussions.
