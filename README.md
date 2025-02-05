@@ -22,8 +22,6 @@ https://discusshub-b96dc.web.app
 ![DiscussHub Screenshot](https://i.ibb.co/ynjT4jpv/discusshub-b96dc-web-app-Nest-Hub-Max.png)
 
 
-
-
 ## Main Technologies Used
 - **MongoDB**: Database for storing user data and discussions.
 - **Express.js**: Backend API framework.
