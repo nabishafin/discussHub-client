@@ -45,7 +45,7 @@ const Announcement = () => {
                 </div>
             </motion.div>
 
-            {/* Swiper to Display Announcements */}
+
             <Swiper
                 spaceBetween={30}
                 slidesPerView={1}
