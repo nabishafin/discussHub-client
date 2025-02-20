@@ -11,6 +11,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 const DashBoard = () => {
 
     const [isAdmin] = useAdmin()
+    console.log(isAdmin)
 
 
 

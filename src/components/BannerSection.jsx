@@ -17,25 +17,23 @@ const BannerSection = () => {
     };
 
     return (
-        <div className="bg-gradient-to-r from-black via-[#0f4f4f] to-black text-white p-8">
-            <div className="container mx-auto flex justify-center items-center">
-                <div className="w-full max-w-xl">
-                    {/* Search Bar */}
-                    <form className="flex items-center space-x-2" onSubmit={handleSearchSubmit}>
-                        <motion.input
-                            type="text"
-                            value={searchTerm}
-                            onChange={handleSearchChange}
-                            placeholder="Search posts by tags..."
-                            className="input input-bordered w-full rounded-l-md focus:ring-2 focus:ring-blue-500 bg-[#1c2531] text-white"
-                            whileFocus={{
-                                scale: 1.05,
-                                transition: { duration: 0.3 }
-                            }}
-                            aria-label="Search posts"
-                        />
-                    </form>
-                </div>
+        <div className="bg-gradient-to-r from-black via-[#0f4f4f] to-black text-white p-8 h-[500px] flex justify-center items-center">
+            <div className="w-full max-w-xl">
+                {/* Search Bar */}
+                <form className="flex items-center space-x-2" onSubmit={handleSearchSubmit}>
+                    <motion.input
+                        type="text"
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        placeholder="Search posts by tags..."
+                        className="input input-bordered w-full rounded-l-md focus:ring-2 focus:ring-blue-500 bg-[#1c2531] text-white"
+                        whileFocus={{
+                            scale: 1.05,
+                            transition: { duration: 0.3 }
+                        }}
+                        aria-label="Search posts"
+                    />
+                </form>
             </div>
         </div>
     );

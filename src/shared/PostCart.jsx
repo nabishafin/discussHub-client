@@ -2,16 +2,14 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const PostCard = ({ post }) => {
-
-
     return (
         <motion.div
-            className="bg-gray-100 border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col"
+            className="bg-gray-100 border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col w-full mx-auto"
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
         >
             {/* Wrap the card content with a Link component */}
             <Link to={`/postdetails/${post._id}`} className="flex flex-col">
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-4 md:p-6 flex flex-col flex-grow">
                     {/* Post Title */}
                     <motion.h2
                         className="text-2xl font-semibold text-gray-900"
@@ -23,7 +21,7 @@ const PostCard = ({ post }) => {
                     </motion.h2>
 
                     {/* Author and Time */}
-                    <div className="flex items-center text-sm text-gray-600 mt-2">
+                    <div className="flex flex-wrap items-center text-sm text-gray-600 mt-2">
                         <img
                             src={post.author_img} // Author Image
                             alt="Author"
@@ -59,7 +57,6 @@ const PostCard = ({ post }) => {
                 </div>
             </Link>
         </motion.div>
-
     );
 };
 
