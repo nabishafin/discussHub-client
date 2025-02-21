@@ -1,8 +1,10 @@
 import useAxiosPublic from '@/hooks/useAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
-import { motion } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // Import Swiper styles
+import 'swiper/css/autoplay'; // Import autoplay styles
 
 const Announcement = () => {
     const axiosPublic = useAxiosPublic();
@@ -45,13 +47,28 @@ const Announcement = () => {
                 </div>
             </motion.div>
 
-
+            {/* Swiper for Announcements */}
             <Swiper
                 spaceBetween={30}
-                slidesPerView={1}
+                slidesPerView={1} // Default for small devices
                 loop={true}
                 autoplay={{
                     delay: 3000,
+                    disableOnInteraction: false,
+                }}
+                breakpoints={{
+                    // When window width is >= 640px (medium devices)
+                    640: {
+                        slidesPerView: 2, // Show 2 slides on medium devices
+                    },
+                    // When window width is >= 768px (large devices)
+                    768: {
+                        slidesPerView: 3, // Show 3 slides on large devices
+                    },
+                    // When window width is >= 1024px (extra large devices)
+                    1024: {
+                        slidesPerView: 4, // Show 4 slides on extra large devices
+                    },
                 }}
                 className="rounded-lg overflow-hidden"
             >
@@ -60,7 +77,7 @@ const Announcement = () => {
                         <motion.div
                             className="bg-white p-6 rounded-lg shadow-lg mb-4"
                             whileHover={{ scale: 1.05 }}
-                            transition={{ type: "spring", stiffness: 200 }}
+                            transition={{ type: 'spring', stiffness: 200 }}
                         >
                             <div className="flex items-center">
                                 <motion.img
@@ -72,13 +89,13 @@ const Announcement = () => {
                                 <div>
                                     <motion.p
                                         className="text-gray-800 font-semibold"
-                                        whileHover={{ color: "#4F46E5" }}
+                                        whileHover={{ color: '#4F46E5' }}
                                     >
                                         {announcement.authorName}
                                     </motion.p>
                                     <motion.p
                                         className="text-gray-500 text-sm"
-                                        whileHover={{ color: "#4F46E5" }}
+                                        whileHover={{ color: '#4F46E5' }}
                                     >
                                         {announcement.title}
                                     </motion.p>

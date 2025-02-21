@@ -45,7 +45,6 @@ const MainContainer = () => {
         );
     }
 
-
     // Filter category posts by search term as well
     if (searchTerm) {
         categoryPosts = categoryPosts.filter(post => {
@@ -63,7 +62,8 @@ const MainContainer = () => {
 
     return (
         <div className="my-5">
-            <div role="tablist" className="tabs tabs-bordered">
+            {/* Tabs at the top */}
+            <div role="tablist" className="tabs tabs-bordered flex flex-wrap justify-center gap-2 mb-5">
                 <input
                     onClick={() => setCategory('')}
                     type="radio"
@@ -73,17 +73,6 @@ const MainContainer = () => {
                     aria-label="All"
                     defaultChecked
                 />
-                <div role="tabpanel" className="tab-content mt-5">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        {
-                            categoryPosts.map(post => (
-                                <PostCart key={post._id} post={post} />
-                            ))
-                        }
-                    </div>
-                </div>
-
-                {/* Repeat the same for other categories */}
                 <input
                     onClick={() => setCategory('programming')}
                     type="radio"
@@ -92,16 +81,6 @@ const MainContainer = () => {
                     className="tab"
                     aria-label="Programming"
                 />
-                <div role="tabpanel" className="tab-content mt-5">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        {
-                            categoryPosts.map(post => (
-                                <PostCart key={post._id} post={post} />
-                            ))
-                        }
-                    </div>
-                </div>
-
                 <input
                     onClick={() => setCategory('health')}
                     type="radio"
@@ -110,16 +89,6 @@ const MainContainer = () => {
                     className="tab"
                     aria-label="Health"
                 />
-                <div role="tabpanel" className="tab-content mt-5">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        {
-                            categoryPosts.map(post => (
-                                <PostCart key={post._id} post={post} />
-                            ))
-                        }
-                    </div>
-                </div>
-
                 <input
                     onClick={() => setCategory('travel')}
                     type="radio"
@@ -128,16 +97,6 @@ const MainContainer = () => {
                     className="tab"
                     aria-label="Travel"
                 />
-                <div role="tabpanel" className="tab-content mt-5">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        {
-                            categoryPosts.map(post => (
-                                <PostCart key={post._id} post={post} />
-                            ))
-                        }
-                    </div>
-                </div>
-
                 <input
                     onClick={() => setCategory('food')}
                     type="radio"
@@ -146,16 +105,6 @@ const MainContainer = () => {
                     className="tab"
                     aria-label="Food"
                 />
-                <div role="tabpanel" className="tab-content mt-5">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        {
-                            categoryPosts.map(post => (
-                                <PostCart key={post._id} post={post} />
-                            ))
-                        }
-                    </div>
-                </div>
-
                 <input
                     onClick={() => setCategory('photography')}
                     type="radio"
@@ -164,14 +113,14 @@ const MainContainer = () => {
                     className="tab"
                     aria-label="Photography"
                 />
-                <div role="tabpanel" className="tab-content mt-5">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        {
-                            categoryPosts.map(post => (
-                                <PostCart key={post._id} post={post} />
-                            ))
-                        }
-                    </div>
+            </div>
+
+            {/* Cards below the tabs */}
+            <div className="mt-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {categoryPosts.map(post => (
+                        <PostCart key={post._id} post={post} />
+                    ))}
                 </div>
             </div>
         </div>
