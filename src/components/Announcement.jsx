@@ -75,7 +75,7 @@ const Announcement = () => {
                 {announcements.map((announcement, index) => (
                     <SwiperSlide key={index}>
                         <motion.div
-                            className="bg-white p-6 rounded-lg shadow-lg mb-4"
+                            className="bg-white p-6 rounded-lg shadow-lg mb-4 h-52"
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: 'spring', stiffness: 200 }}
                         >

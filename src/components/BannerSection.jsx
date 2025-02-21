@@ -22,7 +22,7 @@ const BannerSection = () => {
             {/* Content Section */}
             <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 text-center md:text-left">
                 <motion.h1
-                    className="text-4xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
+                    className="text-4xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#0f4f4f] via-white to-[#0f4f4f]"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -59,7 +59,7 @@ const BannerSection = () => {
             {/* Image Section */}
             <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
                 <motion.img
-                    src="https://i.ibb.co.com/qYxYZ6wk/disscuss.jpg"
+                    src="https://i.ibb.co.com/8LPfzH65/b.jpg"
                     alt="Banner Image"
                     className="rounded-xl shadow-2xl w-full max-w-md responsive-image"
                     initial={{ opacity: 0, scale: 0.8 }}
