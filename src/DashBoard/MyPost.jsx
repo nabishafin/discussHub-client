@@ -22,7 +22,6 @@ const MyPost = () => {
         }
     });
 
-
     // Filter posts that belong to the logged-in user
     const userPosts = posts.filter(post => post.email === user.email);
 
@@ -51,8 +50,6 @@ const MyPost = () => {
         });
     };
 
-
-
     return (
         <div>
             <div className="max-w-7xl mx-auto p-6">
@@ -63,7 +60,8 @@ const MyPost = () => {
                         <thead className="bg-gray-100">
                             <tr>
                                 <th className="p-4 text-sm font-semibold text-center text-gray-700">Post Title</th>
-                                <th className="p-4 text-sm font-semibold text-center text-gray-700">Number of votes</th>
+                                {/* Hide on small screens, show on medium and larger screens */}
+                                <th className="p-4 text-sm font-semibold text-center text-gray-700 hidden md:table-cell">Number of votes</th>
                                 <th className="p-4 text-sm font-semibold text-center text-gray-700">Comment Button</th>
                                 <th className="p-4 text-sm font-semibold text-center text-gray-700">Delete Button</th>
                             </tr>
@@ -72,7 +70,8 @@ const MyPost = () => {
                             {userPosts.map((post) => (
                                 <tr key={post._id} className="border-b border-gray-200 hover:bg-gray-50">
                                     <td className="p-4 text-sm text-gray-800 text-center">{post.post_title}</td>
-                                    <td className="p-4 text-sm text-gray-800 text-center">{post.votes_count}</td>
+                                    {/* Hide on small screens, show on medium and larger screens */}
+                                    <td className="p-4 text-sm text-gray-800 text-center hidden md:table-cell">{post.votes_count}</td>
                                     <td className="p-4 text-sm text-sky-800 text-center font-bold">
                                         <button className="text-center">
                                             <Link to={`/postdetails/${post._id}`}>
@@ -92,7 +91,6 @@ const MyPost = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

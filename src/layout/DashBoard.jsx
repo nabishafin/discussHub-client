@@ -5,7 +5,7 @@ import { FaHome, FaSearch, FaUsers } from 'react-icons/fa';
 import { FaBookBookmark, FaCalendar, FaCartFlatbedSuitcase } from 'react-icons/fa6';
 import { IoMenuSharp } from 'react-icons/io5';
 import { MdContactMail, MdOutlineReviews } from 'react-icons/md';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 
 const DashBoard = () => {
@@ -21,10 +21,12 @@ const DashBoard = () => {
         <div className="flex flex-col md:flex-row text-white font-bold">
             {/* Sidebar */}
             <div className="md:w-[250px] bg-gradient-to-r from-black via-[#022121] to-black  md:min-h-screen border-2">
-                <div className='my-7 flex flex-col justify-center items-center'>
-                    <p className='text-3xl font-bold'>DISCUSS HUB</p>
-                    <p className='text-lg font-bold '>FOURM</p>
-                </div>
+                <Link to='/'>
+                    <div className='my-7 flex flex-col justify-center items-center'>
+                        <p className='text-3xl font-bold'>DISCUSS HUB</p>
+                        <p className='text-lg font-bold '>FOURM</p>
+                    </div>
+                </Link>
                 <ul className="menu px-4 hidden md:block">
                     {/* Conditional Rendering for Admin vs User */}
                     {isAdmin ? (
@@ -115,12 +117,25 @@ const DashBoard = () => {
                     {isAdmin ? (
                         <>
                             <li>
-                                <NavLink to="/dashboard/userhome">
+                                <NavLink to="/dashboard/adminprofile">
                                     <FaHome />
-                                    Admin Home
+                                    Admin Profile
                                 </NavLink>
                             </li>
-                            {/* Add other admin links */}
+                            <li>
+                                <NavLink to="/dashboard/alluser">
+                                    <FaUsers />
+                                    Manage Users
+                                </NavLink>
+                            </li>
+
+                            <li>
+                                <NavLink to="/dashboard/announcement">
+                                    <FaUsers />
+                                    Make Announcement
+                                </NavLink>
+                            </li>
+
                         </>
                     ) : (
                         <>
