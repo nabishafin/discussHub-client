@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo-96.png'
 import { MdNotificationAdd } from 'react-icons/md';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { AuthContext } from '@/provider/AuthProvider';
 import useAxiosPublic from '@/hooks/useAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
@@ -17,6 +17,8 @@ const Navbar = () => {
             return res.data;
         },
     });
+
+    // console.log(announcements);
 
 
     const links =
@@ -78,8 +80,6 @@ const Navbar = () => {
                             </li>
                         )}
                     </ul>
-
-
                     {user && (
                         <div className='dropdown dropdown-end z-50'>
                             <div
