@@ -54,15 +54,16 @@ const TopContributors = () => {
             {
                 label: 'Posts',
                 data: contributors.map((c) => c.posts),
-                backgroundColor: 'rgba(59, 130, 246, 0.6)',
+                backgroundColor: 'rgba(220, 38, 38, 1)', // solid red
             },
             {
                 label: 'Comments',
                 data: contributors.map((c) => c.comments),
-                backgroundColor: 'rgba(34, 197, 94, 0.6)',
+                backgroundColor: 'rgba(0, 0, 0, 1)', // solid black
             },
         ],
     };
+
 
     const chartOptions = {
         responsive: true,
@@ -79,12 +80,12 @@ const TopContributors = () => {
 
     return (
         <motion.div
-            className="top-contributors-section bg-white p-6 rounded-lg shadow-lg"
+            className="top-contributors-section bg-white p-6 rounded-lg shadow-lg "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 text-start">Top Contributors</h2>
+
             <div className="flex justify-center items-center h-96">
                 <div className="w-full max-w-3xl">
                     <Bar data={chartData} options={chartOptions} />

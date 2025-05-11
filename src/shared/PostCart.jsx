@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { FaComment, FaThumbsUp } from 'react-icons/fa'; // For comment and upvote icons
 
 const PostCard = ({ post }) => {
     return (
         <motion.div
-            className="bg-gray-100 border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col w-full mx-auto"
+            className="border rounded-[5px] border-gray-300 shadow-lg overflow-hidden flex flex-col w-full mx-auto cursor-pointer"
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
         >
             {/* Wrap the card content with a Link component */}
@@ -34,7 +35,7 @@ const PostCard = ({ post }) => {
 
                     {/* Tags */}
                     <div className="mt-2">
-                        <span className="px-2 py-1 text-xs font-medium text-blue-700 bg-gray-200 rounded-full">
+                        <span className="px-2 py-1 text-xs font-medium text-red-600 bg-gray-200 rounded-full">
                             {post.tags}
                         </span>
                     </div>
@@ -46,11 +47,13 @@ const PostCard = ({ post }) => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                        <div>
+                        <div className="flex items-center space-x-2">
+                            <FaComment className="text-gray-500" />
                             <span className="font-semibold">{post.comments_count}</span> Comments
                         </div>
                         <div className="flex items-center space-x-2">
-                            <span className="font-semibold text-green-600">{post.upvote_count}</span> Upvotes
+                            <FaThumbsUp className="text-blue-500" />
+                            <span className="font-semibold text-blue-500">{post.upvote_count}</span> Upvotes
                             <span className="text-xs text-gray-400">({post.votes_count} total votes)</span>
                         </div>
                     </motion.div>

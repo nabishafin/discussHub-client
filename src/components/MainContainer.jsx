@@ -61,9 +61,9 @@ const MainContainer = () => {
     }
 
     return (
-        <div className="my-5">
+        <div className="my-5 w-full md:w-10/12 mx-auto px-4">
             {/* Tabs at the top */}
-            <div role="tablist" className="tabs tabs-bordered flex flex-wrap justify-center gap-2 mb-5">
+            <div role="tablist" className="tabs tabs-bordered tab-border-red flex flex-wrap justify-center gap-2 mb-5">
                 <input
                     onClick={() => setCategory('')}
                     type="radio"
@@ -117,7 +117,7 @@ const MainContainer = () => {
 
             {/* Cards below the tabs */}
             <div className="mt-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {categoryPosts.map(post => (
                         <PostCart key={post._id} post={post} />
                     ))}

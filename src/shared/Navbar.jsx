@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/logo-96.png';
+import logo from '../assets/logo icon.png';
 import { MdNotificationAdd } from 'react-icons/md';
 import { useContext, useEffect, useState, useRef } from 'react';
 import { AuthContext } from '@/provider/AuthProvider';
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center">
                             <img className="w-10 md:w-12 mr-2" src={logo} alt="Logo" />
-                            <span className="text-xl font-bold">DiscussHub</span>
+                            <span className="text-3xl font-bold text-white">DiscussHub</span>
                         </Link>
                     </div>
 
