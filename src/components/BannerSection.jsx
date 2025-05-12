@@ -21,17 +21,17 @@ const BannerSection = () => {
 
     return (
         <section className='bg-black'>
-            <div className="bg-black w-full md:w-10/12 mx-auto text-white py-16 px-4 flex flex-col md:flex-row items-center justify-between min-h-[700px]">
+            <div className="bg-black w-full md:w-10/12 mx-auto text-white py-16 px-4 flex flex-col md:flex-row items-center justify-between min-h-[700px] gap-5">
 
                 {/* Left Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
                     <motion.h1
-                        className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-red-600 via-red-400 to-red-600 text-transparent bg-clip-text"
+                        className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-red-600 via-red-900 to-red-600 text-transparent bg-clip-text"
                         initial={{ opacity: 0, y: -40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        Welcome to DiscussHub
+                        Discover Insightful Discussions on DiscussHub
                         {/* <Typed
                             strings={['Welcome to DiscussHub', 'Join the Conversation', 'Explore Trending Topics']}
                             typeSpeed={40}
@@ -111,7 +111,7 @@ const BannerSection = () => {
                     <img
                         src="https://via.placeholder.com/500x500?text=Join+The+Conversation"
                         alt="Discussion Illustration"
-                        className="rounded-[3px] shadow-2xl w-full max-w-2xl object-cover"
+                        className="rounded-[3px] shadow-2xl w-full max-w-3xl object-cover"
                         onError={handleImageError}
                         loading="lazy"
                     />

@@ -4,8 +4,8 @@ import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 const MakeAnnouncement = () => {
-    const axiosPublic = useAxiosPublic()
-    const navigate = useNavigate()
+    const axiosPublic = useAxiosPublic();
+    const navigate = useNavigate();
 
     const handlesubmit = (e) => {
         e.preventDefault();
@@ -15,8 +15,8 @@ const MakeAnnouncement = () => {
         const authorImage = form.authorImage.value;
         const description = form.description.value;
 
-        const obj = { authorImage, authorName, title, description }
-        console.log(obj)
+        const obj = { authorImage, authorName, title, description };
+        console.log(obj);
 
         axiosPublic.post('/announcement', obj)
             .then(res => {
@@ -26,62 +26,56 @@ const MakeAnnouncement = () => {
                     navigate('/');
                 }
             });
-
-    }
-
-
+    };
 
     return (
         <div>
-            <div class="min-h-screen flex justify-center items-center text-black">
-                <div class="card p-0 md:p-10 w-full bg-white shadow-xl">
-                    <div class="card-body">
-                        <h2 class="card-title text-center text-2xl font-semibold">Make Announcement</h2>
+            <div className="min-h-screen flex justify-center items-center text-black">
+                <div className="card p-0 md:p-10 w-full max-w-2xl bg-white shadow-xl">
+                    <div className="card-body">
+                        <h2 className="card-title text-center text-2xl font-semibold">Make Announcement</h2>
 
-                        <form onSubmit={(e) => { handlesubmit(e) }} action="#" method="POST">
+                        <form onSubmit={handlesubmit}>
 
-                            <div class="form-control mb-4">
-                                <label for="authorImage" class="label">
-                                    <span class="label-text">Author Image URL</span>
+                            <div className="form-control mb-4">
+                                <label htmlFor="authorImage" className="label">
+                                    <span className="label-text">Author Image URL</span>
                                 </label>
-                                <input type="text" id="authorImage" name="authorImage" class="input input-bordered input-primary" />
-                                <small class="text-gray-500">Enter the image URL for the author.</small>
+                                <input type="text" id="authorImage" name="authorImage" className="input input-bordered input-primary" />
+                                <small className="text-gray-500">Enter the image URL for the author.</small>
                             </div>
 
-
-                            <div class="form-control mb-4">
-                                <label for="authorName" class="label">
-                                    <span class="label-text">Author Name</span>
+                            <div className="form-control mb-4">
+                                <label htmlFor="authorName" className="label">
+                                    <span className="label-text">Author Name</span>
                                 </label>
-                                <input type="text" id="authorName" name="authorName" class="input input-bordered input-primary" placeholder="Enter author's name" required />
-                                <small class="text-gray-500">Full name of the author.</small>
+                                <input type="text" id="authorName" name="authorName" className="input input-bordered input-primary" placeholder="Enter author's name" required />
+                                <small className="text-gray-500">Full name of the author.</small>
                             </div>
 
-
-
-                            <div class="form-control mb-4">
-                                <label for="title" class="label">
-                                    <span class="label-text">Title</span>
+                            <div className="form-control mb-4">
+                                <label htmlFor="title" className="label">
+                                    <span className="label-text">Title</span>
                                 </label>
-                                <input type="text" id="title" name="title" class="input input-bordered input-primary" placeholder="Enter announcement title" required />
+                                <input type="text" id="title" name="title" className="input input-bordered input-primary" placeholder="Enter announcement title" required />
                             </div>
 
-
-                            <div class="form-control mb-4">
-                                <label for="description" class="label">
-                                    <span class="label-text">Description</span>
+                            <div className="form-control mb-4">
+                                <label htmlFor="description" className="label">
+                                    <span className="label-text">Description</span>
                                 </label>
-                                <textarea id="description" name="description" class="textarea textarea-bordered textarea-primary" placeholder="Enter announcement description" required></textarea>
+                                <textarea id="description" name="description" className="textarea textarea-bordered textarea-primary" placeholder="Enter announcement description" required></textarea>
                             </div>
 
-                            <div class="form-control mt-4">
-                                <button type="submit" class="btn btn-primary w-full">Submit Announcement</button>
+                            <div className="form-control mt-4">
+                                <button type="submit" className="btn bg-red-600 text-white hover:bg-red-700 w-full">
+                                    Submit Announcement
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

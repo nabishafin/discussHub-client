@@ -162,7 +162,7 @@ const DashBoard = () => {
             </div>
 
             {/* Dashboard content */}
-            <div className="flex-1 border-2 p-4 ">
+            <div className="flex-1 px-2 ">
                 <Outlet />
             </div>
         </div>
