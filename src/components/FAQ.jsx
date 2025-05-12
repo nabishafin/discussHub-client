@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 const FAQ = () => {
-    // Static data for FAQs
     const faqs = [
         {
             id: 1,
@@ -31,7 +31,6 @@ const FAQ = () => {
         },
     ];
 
-    // State to manage which FAQ is expanded
     const [expandedId, setExpandedId] = useState(null);
 
     const toggleFAQ = (id) => {
@@ -40,43 +39,52 @@ const FAQ = () => {
 
     return (
         <motion.div
-            className="faq-section bg-white p-6 rounded-lg shadow-lg"
+            className="faq-section  py-8  px-4 md:w-10/12 w-full mx-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-black mb-8">Frequently Asked Questions</h2>
             <div className="space-y-4">
                 {faqs.map((faq) => (
                     <motion.div
                         key={faq.id}
-                        className="faq-item bg-gray-50 p-4 rounded-lg shadow-md"
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ type: 'spring', stiffness: 200 }}
+                        className="faq-item bg-gray-100 p-5 rounded-[4px] border border-gray-300 "
+                        whileHover={{
+                            scale: 1.02,
+                            borderColor: '#ef4444'
+                        }}
+                        transition={{ type: 'spring', stiffness: 300 }}
                     >
                         <button
-                            className="w-full text-left flex justify-between items-center"
+                            className="w-full text-left flex justify-between items-center focus:outline-none"
                             onClick={() => toggleFAQ(faq.id)}
                         >
-                            <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
+                            <h3 className="text-lg font-semibold text-black">{faq.question}</h3>
                             <motion.span
-                                className="text-xl"
+                                className="text-red-500"
                                 animate={{ rotate: expandedId === faq.id ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                {expandedId === faq.id ? '▲' : '▼'}
+                                {expandedId === faq.id ? (
+                                    <FiChevronUp className="w-5 h-5" />
+                                ) : (
+                                    <FiChevronDown className="w-5 h-5" />
+                                )}
                             </motion.span>
                         </button>
                         {expandedId === faq.id && (
-                            <motion.p
-                                className="text-gray-600 mt-2"
+                            <motion.div
+                                className="overflow-hidden"
                                 initial={{ opacity: 0, height: 0 }}
                                 animate={{ opacity: 1, height: 'auto' }}
                                 exit={{ opacity: 0, height: 0 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                {faq.answer}
-                            </motion.p>
+                                <p className="text-gray-700 mt-4 pl-2 border-l-4 border-red-500">
+                                    {faq.answer}
+                                </p>
+                            </motion.div>
                         )}
                     </motion.div>
                 ))}
