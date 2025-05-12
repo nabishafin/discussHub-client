@@ -26,19 +26,13 @@ const BannerSection = () => {
                 {/* Left Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
                     <motion.h1
-                        className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-red-600 via-red-900 to-red-600 text-transparent bg-clip-text"
+                        className="text-4xl md:text-6xl font-extrabold mb-6 bg-red-600 text-transparent bg-clip-text"
                         initial={{ opacity: 0, y: -40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
                         Discover Insightful Discussions on DiscussHub
-                        {/* <Typed
-                            strings={['Welcome to DiscussHub', 'Join the Conversation', 'Explore Trending Topics']}
-                            typeSpeed={40}
-                            backSpeed={50}
-                            loop
-                            className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-red-600 via-red-400 to-red-600 text-transparent bg-clip-text"
-                        /> */}
+
                     </motion.h1>
 
                     <motion.p

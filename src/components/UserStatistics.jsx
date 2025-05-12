@@ -120,7 +120,7 @@ const UserStatistics = () => {
                 </div>
 
                 <motion.div
-                    className="mt-12 bg-black p-6 rounded-lg border border-gray-800  rounded-[5px]"
+                    className="mt-12 bg-black p-6  border border-gray-800  rounded-[5px]"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 }}

@@ -5,7 +5,6 @@ import Announcement from '@/components/Announcement';
 import TopContributors from '@/components/TopContributors';
 import UserStatistics from '@/components/UserStatistics';
 import FAQ from '@/components/FAQ';
-import SocialMediaSection from '@/components/SocialMediaSection';
 import WhyPeopleLoveDiscussHub from '@/components/WhyPeopleLoveDiscussHub';
 
 

@@ -26,11 +26,10 @@ const MainContainer = () => {
             .catch(err => console.error('Error fetching tags:', err));
     }, []);
 
-    // Filter posts based on both category and search term
-    let categoryPosts;
 
+    let categoryPosts;
     if (category === '') {
-        categoryPosts = posts; // If no category is specified, use all posts
+        categoryPosts = posts;
     } else if (category === 'someCategory') {
         categoryPosts = posts.filter(data =>
             data.tags && data.tags.includes('someCategory')
@@ -48,14 +47,12 @@ const MainContainer = () => {
     // Filter category posts by search term as well
     if (searchTerm) {
         categoryPosts = categoryPosts.filter(post => {
-            // Convert the tag string into an array (split by spaces or commas if needed)
+
             const tagsArray = Array.isArray(post.tags) ? post.tags : post.tags.split(",").map(tag => tag.trim());
 
             return (
-                // Check if any of the tags matches the search term
                 tagsArray.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase())) ||
-                // Check if the post title matches the search term
-                post.post_title.toLowerCase().includes(searchTerm.toLowerCase()) // Assuming post has a post_title
+                post.post_title.toLowerCase().includes(searchTerm.toLowerCase())
             );
         });
     }
@@ -115,7 +112,7 @@ const MainContainer = () => {
                 />
             </div>
 
-            {/* Cards below the tabs */}
+
             <div className="mt-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {categoryPosts.map(post => (
