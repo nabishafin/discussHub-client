@@ -5,6 +5,8 @@ import Announcement from '@/components/Announcement';
 import TopContributors from '@/components/TopContributors';
 import UserStatistics from '@/components/UserStatistics';
 import FAQ from '@/components/FAQ';
+import SocialMediaSection from '@/components/SocialMediaSection';
+import WhyPeopleLoveDiscussHub from '@/components/WhyPeopleLoveDiscussHub';
 
 
 const Home = () => {
@@ -12,9 +14,9 @@ const Home = () => {
         <div>
             <BannerSection></BannerSection>
             <MainContainer></MainContainer>
-
-            <Announcement></Announcement>
+            <WhyPeopleLoveDiscussHub />
             <TopContributors></TopContributors>
+            <Announcement></Announcement>
             <UserStatistics></UserStatistics>
             <FAQ></FAQ>
         </div>

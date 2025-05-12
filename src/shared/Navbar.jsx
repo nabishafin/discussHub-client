@@ -55,8 +55,8 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="bg-black text-white z-10 sticky top-0">
-            <div className=" w-full md:w-10/12 mx-auto px-4">
+        <div className="bg-black text-white z-10 sticky top-0 ">
+            <div className=" w-full md:w-10/12 mx-auto px-4 p-4">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center">
@@ -77,7 +77,7 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                    <div className="hidden lg:flex items-center space-x-6">
+                    <div className="hidden lg:flex items-center space-x-6 ">
                         {navLinks.map(link => (
                             <Link
                                 key={link.to}
@@ -99,7 +99,7 @@ const Navbar = () => {
                         </button>
 
                         {!user && (
-                            <Link className="font-bold text-white hover:text-gray-300 transition duration-200" to="/login">Join Us</Link>
+                            <Link className="font-bold text-white hover:text-gray-300 transition duration-200 " to="/login">Join Us</Link>
                         )}
                         {user && (
                             <div className="relative" ref={profileDropdownRef}>
@@ -161,7 +161,7 @@ const Navbar = () => {
                                     <div className="relative">
                                         <MdNotificationAdd size={28} />
                                         {announcements.length > 0 && (
-                                            <span className="absolute -top-1 -right-5 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                                            <span className="absolute -top-1 -right-5 bg-red-600 text-white text-xs rounded-full w-5 h-5  flex items-center justify-center">
                                                 {announcements.length}
                                             </span>
                                         )}
@@ -176,7 +176,7 @@ const Navbar = () => {
                                 </>
                             )}
                             {!user && (
-                                <Link className="font-bold text-white hover:text-gray-300 transition duration-200 block py-2 px-4" to="/login">Join Us</Link>
+                                <Link className="font-bold  text-white hover:text-gray-300 transition duration-200 block py-2 px-4 " to="/login">Join Us</Link>
                             )}
                         </div>
                     </div>
