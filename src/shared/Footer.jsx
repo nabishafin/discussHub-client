@@ -22,7 +22,7 @@ const Footer = () => {
                 </aside>
 
                 <nav>
-                    <h6 className="text-xl font-semibold mb-2">Forum Sections</h6>
+                    <h6 className="text-xl font-semibold mb-2 text-red-600">Forum Sections</h6>
                     <ul className="space-y-1">
                         <li><a className="link link-hover">General Discussion</a></li>
                         <li><a className="link link-hover">Tech Support</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                 </nav>
 
                 <nav>
-                    <h6 className="text-xl font-semibold mb-2">Social Media</h6>
+                    <h6 className="text-xl font-semibold mb-2 text-red-600">Social Media</h6>
                     <ul className="space-y-2">
                         <li>
                             <a href="https://facebook.com" className="flex items-center gap-2 hover:text-red-500">
@@ -53,7 +53,7 @@ const Footer = () => {
                 </nav>
 
                 <nav>
-                    <h6 className="text-xl font-semibold mb-2">Legal</h6>
+                    <h6 className="text-xl font-semibold mb-2 text-red-600">Legal</h6>
                     <ul className="space-y-1">
                         <li><a className="link link-hover">Terms of Use</a></li>
                         <li><a className="link link-hover">Privacy Policy</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
             </footer>
 
             <footer className="footer-center bg-black text-white p-4 text-sm">
-                <p>© {new Date().getFullYear()} DiscussHub — All rights reserved.</p>
+                <p>© {new Date().getFullYear()} <span className='text-red-600'>DiscussHub</span> — All rights reserved.</p>
             </footer>
         </div>
     );

@@ -122,7 +122,7 @@ const Announcement = () => {
                     {filteredAnnouncements.map((announcement, index) => (
                         <SwiperSlide key={index}>
                             <motion.div
-                                className="h-[300px] bg-gray-100 dark:bg-gray-800 p-5 rounded-xl border border-gray-200 dark:border-gray-700 flex flex-col relative"
+                                className="h-[300px] bg-gray-100 dark:bg-gray-800 p-5 rounded-[3px] border border-gray-200 dark:border-gray-700 flex flex-col relative"
                                 whileHover={{ y: -5, boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)' }}
                                 transition={{ type: 'spring', stiffness: 300 }}
                             >

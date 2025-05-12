@@ -19,30 +19,44 @@ const TopContributors = () => {
     const contributors = [
         {
             id: 1,
-            name: 'John Doe',
+            name: 'Arman Hossain',
             posts: 120,
             comments: 300,
             profileImage: 'https://via.placeholder.com/150',
         },
         {
             id: 2,
-            name: 'Jane Smith',
+            name: 'Fatema Khatun',
             posts: 95,
             comments: 250,
             profileImage: 'https://via.placeholder.com/150',
         },
         {
             id: 3,
-            name: 'Alice Johnson',
+            name: 'Nayeem Rahman',
             posts: 80,
             comments: 200,
             profileImage: 'https://via.placeholder.com/150',
         },
         {
             id: 4,
-            name: 'Bob Brown',
+            name: 'Rumi Akter',
             posts: 75,
             comments: 180,
+            profileImage: 'https://via.placeholder.com/150',
+        },
+        {
+            id: 5,
+            name: 'Tanjil Ahmed',
+            posts: 60,
+            comments: 150,
+            profileImage: 'https://via.placeholder.com/150',
+        },
+        {
+            id: 6,
+            name: 'Sadia Noor',
+            posts: 50,
+            comments: 130,
             profileImage: 'https://via.placeholder.com/150',
         },
     ];
@@ -64,9 +78,10 @@ const TopContributors = () => {
         ],
     };
 
-
+    // Chart options with responsiveness
     const chartOptions = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'top',
@@ -80,14 +95,13 @@ const TopContributors = () => {
 
     return (
         <motion.div
-            className="top-contributors-section bg-white p-6 rounded-lg shadow-lg "
+            className="top-contributors-section bg-white p-6 rounded-lg shadow-lg"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-
-            <div className="flex justify-center items-center h-96">
-                <div className="w-full max-w-3xl">
+            <div className="flex justify-center items-center w-full md:w-8/12 px-2 mx-auto sm:px-4 md:px-6">
+                <div className="w-full min-h-[250px] sm:min-h-[300px] md:min-h-[400px]">
                     <Bar data={chartData} options={chartOptions} />
                 </div>
             </div>

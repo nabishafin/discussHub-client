@@ -13,7 +13,7 @@ const WhyPeopleLoveDiscussHub = () => {
                 <div className="w-full md:w-1/2">
                     <div className="grid grid-cols-2 gap-4 relative">
                         {/* Main Image (larger) */}
-                        <div className="col-span-2 h-64 rounded-xl overflow-hidden shadow-lg">
+                        <div className="col-span-2 h-64 rounded-[3px] overflow-hidden shadow-lg">
                             <img
                                 src={banner1}
                                 alt="Group discussion"
@@ -22,7 +22,7 @@ const WhyPeopleLoveDiscussHub = () => {
                         </div>
 
                         {/* Secondary Images (smaller) */}
-                        <div className="h-48 rounded-xl overflow-hidden shadow-lg">
+                        <div className="h-48 rounded-[3px] overflow-hidden shadow-lg">
                             <img
                                 src={banner2}
                                 alt="Team meeting"
@@ -30,7 +30,7 @@ const WhyPeopleLoveDiscussHub = () => {
                             />
                         </div>
 
-                        <div className="h-48 rounded-xl overflow-hidden shadow-lg">
+                        <div className="h-48 rounded-[3px] overflow-hidden shadow-lg">
                             <img
                                 src={banner3}
                                 alt="Online discussion"

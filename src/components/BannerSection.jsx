@@ -107,11 +107,11 @@ const BannerSection = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="w-full md:w-1/2 flex justify-center items-center">
+                <div className="w-full md:w-1/2 flex justify-center items-center ">
                     <img
                         src="https://via.placeholder.com/500x500?text=Join+The+Conversation"
                         alt="Discussion Illustration"
-                        className="rounded-lg shadow-2xl w-full max-w-2xl object-cover"
+                        className="rounded-[3px] shadow-2xl w-full max-w-2xl object-cover"
                         onError={handleImageError}
                         loading="lazy"
                     />
