@@ -125,7 +125,7 @@ const Navbar = () => {
                                 </button>
 
                                 {isProfileOpen && (
-                                    <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
+                                    <div className="absolute right-0 mt-2 w-48 rounded-[3px] shadow-lg bg-slate-100 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
                                         <div className="py-1" role="none">
                                             <Link to="/dashboard/myprofile" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
                                                 Your Profile
@@ -172,7 +172,7 @@ const Navbar = () => {
                                 <>
                                     <Link to="/dashboard/myprofile" className="font-bold text-white hover:text-gray-300 transition duration-200 block py-2 px-4">Profile</Link>
                                     <Link to="/dashboard" className="font-bold text-white hover:text-gray-300 transition duration-200 block py-2 px-4">Dashboard</Link>
-                                    <button onClick={logOut} className="bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-200 block py-2 px-4 rounded">Logout</button>
+                                    <button onClick={logOut} className="bg-red-600 text-white hover:bg-gray-300 transition duration-200 block py-2 px-4 rounded">Logout</button>
                                 </>
                             )}
                             {!user && (
