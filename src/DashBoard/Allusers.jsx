@@ -71,8 +71,8 @@ const AllUsers = () => {
                         <div className="overflow-x-auto">
                             <table className="table-auto w-full border-collapse border border-gray-200">
                                 {/* Table Head */}
-                                <thead className="bg-gradient-to-r from-black via-[#0f4f4f] to-black">
-                                    <tr className='text-white'>
+                                <thead className="bg-black">
+                                    <tr className='text-red-600'>
                                         <th className="border border-gray-300 px-2 py-1 md:px-4 md:py-2">#</th>
                                         <th className="border border-gray-300 px-2 py-1 md:px-4 md:py-2">NAME</th>
                                         {/* Hide Email and Subscription Status on mobile */}

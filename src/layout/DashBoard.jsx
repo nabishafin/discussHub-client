@@ -20,7 +20,7 @@ const DashBoard = () => {
     return (
         <div className="flex flex-col md:flex-row text-white font-bold">
             {/* Sidebar */}
-            <div className="md:w-[250px] bg-gradient-to-r from-black via-[#022121] to-black  md:min-h-screen border-2">
+            <div className="md:w-[250px] bg-black  md:min-h-screen border-2">
                 <Link to='/'>
                     <div className='my-7 flex flex-col justify-center items-center'>
                         <p className='text-3xl font-bold'>DISCUSS HUB</p>

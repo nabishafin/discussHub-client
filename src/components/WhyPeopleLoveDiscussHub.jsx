@@ -43,7 +43,7 @@ const WhyPeopleLoveDiscussHub = () => {
                 {/* Content Section */}
                 <div className="w-full md:w-1/2 space-y-4">
                     <span className="inline-block text-red-600 text-sm font-medium tracking-wider">
-                        WELCOME TO DISCUSSHUB
+                        Join the Conversation at DiscussHub
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold leading-tight">
                         Your Space to Discuss, Like, Share & Grow
